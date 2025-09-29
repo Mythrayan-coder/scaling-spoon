@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Shirt</title>
+    <style>
+        body { margin: 16px; font-family: Arial, sans-serif; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Select a Shirt to Swap</h1>
+    <img src="{{ user_image.image.url }}" alt="User Image" width="300">
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <select name="shirt_id">
+            {% for shirt in shirts %}
+                <option value="{{ shirt.id }}">{{ shirt.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Swap Shirt</button>
+    </form>
+</body>
+</html>
