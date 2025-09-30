@@ -1,8 +1,8 @@
-shirt-swapping-project
+**SHIRT-SWAPPING-PROJECT**
 
 The aim of this project is to allow users to upload their own images and virtually try on different shirt styles by overlaying selected shirt images onto their uploaded photos.This helps users visualize how they would look in various shirts before making a purchase or decision.
 
-Requirements
+**REQUIREMENTS**
 
 • Django: The main web framework.
 
@@ -16,13 +16,15 @@ Requirements
 
 • Numpy: Required by OpenCV for array operations.
 
-How to run the code?
+**HOW TO RUN THE CODE?**
 
 python manage.py runserver
 
-Output
+**OUTPUT**
 
-Output of the project will look like below :
+
+**OUTPUT OF THE PROJECT WILL LOOK LIKE BELOW :**
+
 
 https://github.com/user-attachments/assets/c970ce09-69a7-4bc4-b838-36ac00824aed
 
